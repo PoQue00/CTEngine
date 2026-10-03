@@ -1,7 +1,52 @@
 #include <raylib.h>
+#include <string>
 
 #include "input.h"
 
-void CTEInput::renderKey(char renderKey) {
-    DrawText(&renderKey, 10, 10, 20, WHITE);
+void CTEInput::renderKey(const std::string& renderKey) {
+    DrawText("Yui ", 0, 0, 20, BLACK);
 }
+
+
+// ================================================
+// This is proof of my stupidity:
+// ===============================================
+// std::string CTEInput::setKeys(std::string inKey, std::string outKey) {
+//     switch (inKey[0]) {
+//         case 'Q':
+//             outKey = "KEY_Q";
+//             break;
+//         case 'W':
+//             outKey = "KEY_W";
+//             break;
+//         case 'E':
+//             outKey = "KEY_E";
+//             break;
+//         case 'R':
+//             outKey = "KEY_R";
+//             break;
+//         case 'T':
+//             outKey = "KEY_T";
+//             break;
+//         case 'Y':
+//             outKey = "KEY_Y";
+//             break;
+//         case 'U':
+//             outKey = "KEY_U";
+//             break;
+//         case 'I':
+//             outKey = "KEY_I";
+//             break;
+//         case 'O':
+//             outKey = "KEY_O";
+//             break;
+//         case 'P':
+//             outKey = "KEY_P";
+//             break;
+//         default:
+//             // Handle other keys or do nothing
+//             break;
+//     }
+// return outKey;
+// }
+// ================================================

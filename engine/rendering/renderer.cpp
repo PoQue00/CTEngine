@@ -35,3 +35,7 @@ void Renderer::LoadDrawUnloadImage(const QString& imagePath, int x, int y) {
     DrawImage(imagePath, x, y);
     UnloadImage(imagePath);
 }
+
+void Renderer::YuiText() {
+    DrawText("Yui ", 0, 0, 20, BLACK);
+}

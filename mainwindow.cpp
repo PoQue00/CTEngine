@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <raylib.h>
 
 // ================================================
 // Include the necessary headers for custom features
@@ -14,8 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    CTEInput yuiInput;
-    yuiInput.renderKey('Y');
+    void DrawFPS(int posX, int posY);
 }
 
 MainWindow::~MainWindow()
@@ -54,5 +54,11 @@ void MainWindow::on_yuiComboBox_currentTextChanged(const QString &arg1)
         Renderer imageYui;
         imageYui.LoadDrawUnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png", 100, 100);
     }
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
 }
 
