@@ -1,13 +1,21 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+// ================================================
+// Include the necessary headers for custom features
+// ================================================
 #include "engine/rendering/renderer.h"
+#include "engine/input/input.h"
+// =================================================
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    CTEInput yuiInput;
+    yuiInput.renderKey('Y');
 }
 
 MainWindow::~MainWindow()
@@ -21,7 +29,7 @@ void MainWindow::on_startButton_clicked()
     renderEngine.RunRaylibWindow();
 }
 
-
+// ingore the below code, it is not used anymore, but I will keep it here for reference in case you want to use it in the future :)
 // void MainWindow::on_yuiButton_clicked()
 // {
 //     Renderer imageYui;
