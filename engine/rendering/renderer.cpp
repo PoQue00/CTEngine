@@ -17,5 +17,21 @@ void Renderer::RunRaylibWindow() {
 }
 
 void Renderer::LoadImage(QString imagePath) {
-    Image LoadImage(const char *imagePath);
+    Image image = ::LoadImage(imagePath.toStdString().c_str());
+}
+
+void Renderer::DrawImage(const QString& imagePath, int x, int y) {
+    Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
+    DrawTexture(texture, x, y, WHITE);
+}
+
+void Renderer::UnloadImage(const QString& imagePath) {
+    Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
+    UnloadTexture(texture);
+}
+
+void Renderer::LoadDrawUnloadImage(const QString& imagePath, int x, int y) {
+    LoadImage(imagePath);
+    DrawImage(imagePath, x, y);
+    UnloadImage(imagePath);
 }

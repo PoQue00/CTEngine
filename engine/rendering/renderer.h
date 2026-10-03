@@ -7,6 +7,9 @@ class Renderer {
 public:
     void RunRaylibWindow();
     void LoadImage(QString imagePath);
+    void DrawImage(const QString& imagePath, int x, int y);
+    void UnloadImage(const QString& imagePath);
+    void LoadDrawUnloadImage(const QString& imagePath, int x, int y);
 };
 
 #endif // ENGINE_H

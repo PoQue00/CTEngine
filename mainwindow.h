@@ -19,6 +19,8 @@ public:
 private slots:
     void on_startButton_clicked();
 
+    void on_yuiComboBox_currentTextChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
 };
