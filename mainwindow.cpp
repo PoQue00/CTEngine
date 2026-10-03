@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "engine/main.h"
+#include "engine/rendering/renderer.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,5 +17,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_startButton_clicked()
 {
-    RunRaylibWindow();
+    Renderer renderEngine;
+    renderEngine.RunRaylibWindow();
 }

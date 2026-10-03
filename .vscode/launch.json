@@ -8,7 +8,7 @@
             "program": "${command:cmake.launchTargetPath}",
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "visualizerFile": "${command:qt-cpp.natvis}",
+            "visualizerFile": "c:\\Users\\Gavin\\AppData\\Roaming\\Code\\User\\workspaceStorage\\9d45782dc2749a237b89cc271581c99f\\tonka3000.qtvsctools\\qt.natvis.xml",
             "showDisplayString": true,
             "linux": {
                 "MIMode": "gdb",
@@ -56,7 +56,7 @@
             "program": "${command:cmake.launchTargetPath}",
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "visualizerFile": "${command:qt-cpp.natvis}",
+            "visualizerFile": "c:\\Users\\Gavin\\AppData\\Roaming\\Code\\User\\workspaceStorage\\9d45782dc2749a237b89cc271581c99f\\tonka3000.qtvsctools\\qt.natvis.xml",
             "windows": {
                 "sourceFileMap": {
                     "Q:/qt5_workdir/w/s": "${command:qt-cpp.sourceDirectory}",
