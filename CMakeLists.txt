@@ -16,7 +16,13 @@ qt_add_executable(Custos-Turris-Engine
     mainwindow.ui
 )
 
-target_link_libraries(Custos-Turris-Engine PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+add_subdirectory(engine)
+
+target_link_libraries(Custos-Turris-Engine
+    PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+        Custos-Turris-Engine-Raylib
+)
 
 set_target_properties(Custos-Turris-Engine PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
