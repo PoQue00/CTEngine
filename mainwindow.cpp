@@ -15,7 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    void DrawFPS(int posX, int posY);
 }
 
 MainWindow::~MainWindow()
@@ -59,6 +58,7 @@ void MainWindow::on_yuiComboBox_currentTextChanged(const QString &arg1)
 
 void MainWindow::on_pushButton_clicked()
 {
-
+    Renderer text;
+    text.YuiText();
 }
 
