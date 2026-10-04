@@ -24,6 +24,12 @@ target_link_libraries(Custos-Turris-Engine
         Custos-Turris-Engine-Raylib
 )
 
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/engine/assets/yui.png"
+    "${CMAKE_CURRENT_BINARY_DIR}/engine/assets/yui.png"
+    COPYONLY
+)
+
 set_target_properties(Custos-Turris-Engine PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -37,6 +43,7 @@ install(TARGETS Custos-Turris-Engine
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+install(FILES engine/assets/yui.png DESTINATION ${CMAKE_INSTALL_BINDIR}/engine/assets)
 add_subdirectory(tools/MapEditor/MapEditor)
 add_subdirectory(tools/EnemyEditor/EnemyEditor)
 add_subdirectory(tools/TowerEditor/TowerEditor)

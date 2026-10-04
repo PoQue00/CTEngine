@@ -69,19 +69,27 @@ void Renderer::RunRaylibWindow() {
 // End of old rendering functions
 // ===============================================
 
-Texture2D YuiTexture;
+void Renderer::DrawFrame() {
+    InitWindow(426, 862, "TD Test");
+    SetTargetFPS(60);
 
-void Renderer::DrawFrame(){
+    const char* texturePath = TextFormat("%sengine/assets/yui.png", GetApplicationDirectory());
+    const Texture2D yuiTexture = LoadTexture(texturePath);
+    if (!IsTextureValid(yuiTexture)) {
+        TraceLog(LOG_ERROR, "Failed to load texture: %s", texturePath);
+        CloseWindow();
+        return;
+    }
 
-    YuiTexture = LoadTexture("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png");
     while (!WindowShouldClose()) {
         BeginDrawing();
-        
+        ClearBackground(RAYWHITE);
+        DrawTexture(yuiTexture, 0, 0, WHITE);
         DrawText("YuiTexture", 0, 0, 20, BLACK);
-
-        DrawTexture(YuiTexture, 0, 0, WHITE);
-
         EndDrawing();
     }
+
+    UnloadTexture(yuiTexture);
+    CloseWindow();
 }
     

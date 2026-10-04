@@ -75,10 +75,6 @@ void MainWindow::on_startButton_clicked()
 
 void MainWindow::on_yuiButton_clicked()
 {
-    while (!WindowShouldClose()){
-        Renderer imageYui;
-        imageYui.DrawFrame();
-    }
-    
+    Renderer imageYui;
+    imageYui.DrawFrame();
 }
-
