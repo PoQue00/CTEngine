@@ -8,8 +8,8 @@
 
   <rect width="500" height="40" rx="20" fill="#21262d"/>
 
-  <!-- 3.9% of 500 = 19.5 -->
-  <rect width="19.5" height="40" rx="20" fill="#238636"/>
+  <!-- 4.4% of 500 = 22 -->
+  <rect width="22" height="40" rx="20" fill="#238636"/>
 
   <text x="250" y="26"
         text-anchor="middle"
