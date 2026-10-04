@@ -74,12 +74,14 @@ Texture2D YuiTexture;
 void Renderer::DrawFrame(){
 
     YuiTexture = LoadTexture("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png");
-
-    BeginDrawing();
-    
-        ClearBackground(RAYWHITE);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        
+        DrawText("YuiTexture", 0, 0, 20, BLACK);
 
         DrawTexture(YuiTexture, 0, 0, WHITE);
 
-    EndDrawing();
+        EndDrawing();
+    }
 }
+    
