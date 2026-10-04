@@ -4,7 +4,7 @@
 
 ## Progress
 
-<img src="./progress.svg" alt="Project progress: 3.9%" width="19.5">
+<img src="./progress.svg" alt="Project progress: 3.9%" width="800">
 
 ## Architecture
 - **Runtime:** C++ , Lua, Raylib
