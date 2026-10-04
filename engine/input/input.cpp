@@ -1,13 +1,29 @@
 #include <raylib.h>
 #include <string>
 
+// ================================================
+// Include the necessary headers for custom features
+// ================================================
 #include "input.h"
 #include "../rendering/renderer.h"
+// =================================================
+// End of includes
+// ================================================
 
-void CTEInput::renderKey(const std::string& renderKey) {
-    DrawText("Yui ", 0, 0, 20, BLACK);
+void CTEInput::checkKey(const int checkKey) {
+    CTERenderer inputRender;
+    switch (checkKey) {
+        case KEY_K:
+            if (IsKeyPressed(KEY_K)){
+                CTERenderer abortKey;
+                abortKey.abort();
+            }
+    }
 }
 
+// void CTEInput::renderKey(const std::string& renderKey) {
+//     DrawText("Yui ", 0, 0, 20, BLACK);
+// }
 
 // ================================================
 // This is proof of my stupidity:

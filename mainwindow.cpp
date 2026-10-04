@@ -26,9 +26,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_startButton_clicked()
 {
-    Renderer renderEngine;
-    Renderer drawFrame;
-    renderEngine.RunRaylibWindow();
+    CTERenderer initWindow;
+    initWindow.UpdateFrame();
 }
 
 // ingore the below code, it is not used anymore, but I will keep it here for reference in case you want to use it in the future :)
@@ -73,8 +72,8 @@ void MainWindow::on_startButton_clicked()
 // }
 
 
-void MainWindow::on_yuiButton_clicked()
-{
-    Renderer imageYui;
-    imageYui.DrawFrame();
-}
+// void MainWindow::on_yuiButton_clicked()
+// {
+//     Renderer imageYui;
+//     imageYui.DrawFrame();
+// }

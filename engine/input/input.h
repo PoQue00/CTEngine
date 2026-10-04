@@ -1,12 +1,11 @@
-#ifndef input_h
-#define input_h
-
-#include <string>
+#ifndef CTE_INPUT_H
+#define CTE_INPUT_H
 
 class CTEInput{
 public:
-    void renderKey(const std::string& renderKey);
+    void checkKey(const int checkKey);
+    // void renderKey(const std::string& renderKey);
     // void unloadKey(const int unloadKey);
 };
 
-#endif // input_h
+#endif // CTE_INPUT_H
