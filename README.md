@@ -2,7 +2,10 @@
 
 ## Current Phase 1/30
 
-<progress value="58" max="">1487</progress> 3.9%
+<p>
+  <strong>Progress</strong><br>
+  <progress value="60" max="100"></progress> <strong>60%</strong>
+</p>
 
 ## Architecture
 - **Runtime:** C++ , Lua, Raylib
