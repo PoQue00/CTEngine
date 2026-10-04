@@ -1,10 +1,10 @@
 # TDEngine — Tool Checklists
 
-## Current Phase 1/30
+## Current Phase 2/30
 
 ## Progress
 
-<img src="./progress.svg" alt="Project progress: 3.9%" width="800">
+<img src="./progress.svg" alt="Project progress: 4.4%" width="800">
 
 ## Architecture
 - **Runtime:** C++ , Lua, Raylib
@@ -512,7 +512,7 @@
 
 - [x] Create GitHub repository
 - [x] Choose project name
-- [ ] Create README
+- [x] Create README
 - [x] Create LICENSE
 - [x] Create .gitignore
 - [x] Make initial commit
@@ -615,8 +615,8 @@ Create:
 
 - [x] Qt Application creates Engine
 - [x] Engine creates Game
-- [ ] Engine creates Renderer
-- [ ] Game can access required engine systems
+- [x] Engine creates Renderer
+- [x] Game can access required engine systems
 - [x] Renderer can render
 
 ## Target Structure
@@ -634,7 +634,7 @@ Create:
 
 - [x] Qt application launches
 - [x] Engine initialises
-- [ ] Game initialises
+- [x] Game initialises
 - [x] Renderer initialises
 - [ ] Application closes cleanly
 
