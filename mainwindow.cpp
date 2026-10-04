@@ -29,7 +29,6 @@ void MainWindow::on_startButton_clicked()
     Renderer renderEngine;
     Renderer drawFrame;
     renderEngine.RunRaylibWindow();
-    drawFrame.DrawFrame();
 }
 
 // ingore the below code, it is not used anymore, but I will keep it here for reference in case you want to use it in the future :)
