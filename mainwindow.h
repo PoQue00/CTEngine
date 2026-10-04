@@ -25,6 +25,8 @@ private slots:
 
     void on_imageButton_clicked();
 
+    void on_yuiButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

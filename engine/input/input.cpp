@@ -52,9 +52,9 @@ void CTEInput::renderKey(const std::string& renderKey) {
 // }
 // ================================================
 
-void CTEInput::unloadKey(const int unloadKey) {
-    Renderer inputUnload;
-    if(IsKeyPressed(unloadKey)) {
-        inputUnload.UnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/.png");
-    }
-}
+// void CTEInput::unloadKey(const int unloadKey) {
+//     Renderer inputUnload;
+//     if(IsKeyPressed(unloadKey)) {
+//         inputUnload.UnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/.png");
+//     }
+// }
