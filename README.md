@@ -2,14 +2,9 @@
 
 ## Current Phase 1/30
 
-<svg width="500" height="32" viewBox="0 0 500 32" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="32" rx="8" fill="#21262d"/>
-  <rect width="300" height="32" rx="8" fill="#238636"/>
-  <text x="250" y="22" text-anchor="middle"
-        fill="white" font-family="Arial, sans-serif" font-size="15">
-    3.9%
-  </text>
-</svg>
+## Progress
+
+<img src="./progress.svg" alt="Project progress: 60%" width="500">
 
 ## Architecture
 - **Runtime:** C++ , Lua, Raylib
