@@ -68,6 +68,6 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_imageButton_clicked()
 {
     Renderer imageYui;
-    imageYui.LoadDrawUnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png", 100, 150);
+    imageYui.LoadDrawUnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png", 0, 0);
 }
 

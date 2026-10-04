@@ -4,7 +4,7 @@
 #include <raylib.h>
 
 void Renderer::RunRaylibWindow() {
-    InitWindow(600, 800, "TD Test");
+    InitWindow(426, 862, "TD Test");
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
