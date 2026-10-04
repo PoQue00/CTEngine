@@ -4,7 +4,7 @@
      viewBox="0 0 500 40">
 
   <!-- Change ONLY this value -->
-  <metadata progress="3.9"/>
+  <metadata progress="4.4"/>
 
   <rect width="500" height="40" rx="20" fill="#21262d"/>
 
@@ -16,5 +16,5 @@
         font-family="Arial, sans-serif"
         font-size="18"
         font-weight="bold"
-        fill="white">3.9%</text>
+        fill="white">4.4%</text>
 </svg>
