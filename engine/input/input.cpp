@@ -18,6 +18,8 @@ void CTEInput::checkKey(const int checkKey) {
                 CTERenderer abortKey;
                 abortKey.abort();
             }
+        default:
+            break;
     }
 }
 

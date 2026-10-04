@@ -11,7 +11,10 @@
 // ================================================
 
 void CTEEngine::mainEngineLoop() {
-    
+    while (0 == 0) {
+        CTEInput inputCheckMainEngineLoop;
+        inputCheckMainEngineLoop.checkKey(KEY_K);
+    }
 }
 
 void CTEEngine::initialize() {
