@@ -2,6 +2,7 @@
 #include <string>
 
 #include "input.h"
+#include "../rendering/renderer.h"
 
 void CTEInput::renderKey(const std::string& renderKey) {
     DrawText("Yui ", 0, 0, 20, BLACK);
@@ -50,3 +51,10 @@ void CTEInput::renderKey(const std::string& renderKey) {
 // return outKey;
 // }
 // ================================================
+
+void CTEInput::unloadKey(const int unloadKey) {
+    Renderer inputUnload;
+    if(IsKeyPressed(unloadKey)) {
+        inputUnload.UnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/.png");
+    }
+}

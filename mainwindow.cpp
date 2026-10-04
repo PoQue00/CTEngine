@@ -20,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+    CTEInput unload;
+    unload.unloadKey(KEY_U);
 }
 
 void MainWindow::on_startButton_clicked()
@@ -60,5 +62,12 @@ void MainWindow::on_pushButton_clicked()
 {
     Renderer text;
     text.YuiText();
+}
+
+
+void MainWindow::on_imageButton_clicked()
+{
+    Renderer imageYui;
+    imageYui.LoadDrawUnloadImage("C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Custos-Turris-Engine/engine/assets/yui.png", 100, 150);
 }
 

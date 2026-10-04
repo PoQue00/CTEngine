@@ -4,7 +4,7 @@
 #include <raylib.h>
 
 void Renderer::RunRaylibWindow() {
-    InitWindow(600, 400, "TD Test");
+    InitWindow(600, 800, "TD Test");
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
@@ -17,25 +17,43 @@ void Renderer::RunRaylibWindow() {
 }
 
 void Renderer::LoadImage(QString imagePath) {
-    Image image = ::LoadImage(imagePath.toStdString().c_str());
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        Image image = ::LoadImage(imagePath.toStdString().c_str());
+        EndDrawing();
+    }
 }
 
 void Renderer::DrawImage(const QString& imagePath, int x, int y) {
-    Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
-    DrawTexture(texture, x, y, WHITE);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
+        DrawTexture(texture, x, y, WHITE);
+        EndDrawing();
+    }
 }
 
 void Renderer::UnloadImage(const QString& imagePath) {
-    Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
-    UnloadTexture(texture);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        Texture2D texture = LoadTexture(imagePath.toStdString().c_str());
+        UnloadTexture(texture);
+        EndDrawing();
+    }
 }
 
 void Renderer::LoadDrawUnloadImage(const QString& imagePath, int x, int y) {
-    LoadImage(imagePath);
-    DrawImage(imagePath, x, y);
-    UnloadImage(imagePath);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        DrawImage(imagePath, x, y);
+        EndDrawing();
+    }
 }
 
 void Renderer::YuiText() {
-    DrawText("Yui ", 0, 0, 20, BLACK);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        DrawText("Lottie Dimmer ) ", 0, 0, 20, BLACK);
+        EndDrawing();
+    }
 }
