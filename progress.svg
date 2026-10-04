@@ -1,20 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="500"
-     height="40"
-     viewBox="0 0 500 40">
+width="500"
+height="40"
+viewBox="0 0 500 40">
 
-  <!-- Change ONLY this value -->
   <metadata progress="4.4"/>
 
   <rect width="500" height="40" rx="20" fill="#21262d"/>
 
-  <!-- 4.4% of 500 = 22 -->
   <rect width="22" height="40" rx="20" fill="#238636"/>
 
-  <text x="250" y="26"
-        text-anchor="middle"
-        font-family="Arial, sans-serif"
-        font-size="18"
-        font-weight="bold"
-        fill="white">4.4%</text>
+<text x="250" y="26"
+text-anchor="middle"
+font-family="Arial, sans-serif"
+font-size="18"
+font-weight="bold"
+fill="white">4.4%</text>
 </svg>
