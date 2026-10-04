@@ -1,5 +1,9 @@
 # TDEngine — Tool Checklists
 
+## Current Phase 1/30
+
+<progress value="58" max="">1487</progress> 3.9%
+
 ## Architecture
 - **Runtime:** C++ , Lua, Raylib
 - **Editors/Tools:** Qt, MSYS
@@ -2825,10 +2829,6 @@ The core engine is considered functional when:
 ---
 
 # Current Focus
-
-## Current Phase
-
-- [ ] Phase 0 — Project Setup
 
 ## Current Objective
 
